@@ -1,4 +1,4 @@
-var Student = Backbone.Model.extend({
+Yearbook.Models.Student = Backbone.Model.extend({
   
   defaults: {
     id: 0,

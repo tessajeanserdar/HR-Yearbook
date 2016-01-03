@@ -1,7 +1,21 @@
-var app = new AppView({
-  router: new AppRouter(),
-  navbar: new NavBarView(),
-});
+var Yearbook = {
 
-// http://backbonejs.org/#History
-Backbone.history.start()
+    Views: {},
+    Models: {},
+    Collections: {},
+    Router: {}
+}
+
+$(document).ready(function(){
+
+
+
+    // var appView = new Yearbook.Views.AppView();
+    // var students = new Yearbook.Collections.Students();
+    // var studentsView = new Yearbook.Views.StudentsView({collection:students});
+    Yearbook.Router.Instance = new Yearbook.Router(); 
+    // $('#page-content-container').append(appView);
+    Backbone.history.start();
+
+    
+});
